@@ -1,9 +1,10 @@
 let request = require('./request');
 
-var Tickets = function(config){
+let Tickets = function(config, entity){
+
   return {
     list:function() {
-      return request.get(config.url, config.auth_tocken);
+      return request.get(config.url  + '/' +  entity.plural + '.json', config.auth_tocken);
     }
   };
 };

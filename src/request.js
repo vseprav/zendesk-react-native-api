@@ -1,10 +1,10 @@
 let request = {
-  get:function(url, auth_tocken) {
-    return fetch(url, {
+  get:function(uri, auth_tocken) {
+    return fetch(uri, {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
-            'Authorization': 'Basic ' + auth_tocken
+            'Authorization': auth_tocken
           }
         })
   }

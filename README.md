@@ -1,2 +1,2 @@
 # zendesk-react-native-api
-a zendesk API  library for use with react native
+A Zendesk API  library for use with react native
